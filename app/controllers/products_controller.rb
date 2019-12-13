@@ -10,12 +10,8 @@ class ProductsController < ApplicationController
   end
 
   def create
-    @product = product_url.new(product_params)
-    if @product.save
-      redirect_to root_path
-    else
-      render :new
-    end
+    Product.create(product_params)
+    redirect_to root_path
   end
 
   def show
@@ -23,6 +19,10 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
   end
 
+  def destroy
+    Product.delete(params[:id])
+    redirect_to root_path
+  end
 
 
   private
