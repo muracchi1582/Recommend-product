@@ -1,0 +1,1 @@
+$('.money').on 'change', -> $(@).val(money_format($(@).val()))

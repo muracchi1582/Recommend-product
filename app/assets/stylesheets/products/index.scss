@@ -1,0 +1,93 @@
+.index__wrapper{
+  margin-top: 40px;
+}
+
+.content{
+  float: left;
+  color: black;
+  padding: 0 0 0 32px;
+  width: 200px;
+  
+}
+.side__bar{
+  height: calc(100% - 70px);
+  position: fixed;
+  bottom:0;
+  width: 250px;
+  background-color: rgb(250, 240, 246);
+}
+
+
+.index__image{
+  height: 120px;
+  width: 200px;
+}
+
+.content__title{
+  display: block;
+  white-space: normal;
+  word-wrap: break-word;
+  height: 80px;
+  width: 200px;
+}
+
+.index__text{
+  font-size: 13px;
+  text-decoration: none;
+  float: left;
+  color:rgb(139, 139, 139);
+
+
+}
+.index__user{
+  color:rgb(139, 139, 139);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.search__bottom_wrapper{
+  margin: 50px 0 0 100px;
+  float: left;
+  height: 180px;
+  width: 1000px;
+  background-color: $light_blue;
+  opacity: 0.8;
+  border-radius:30px;
+}
+
+.check_box_title{
+  border-radius:5px 5px 15px 5px;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  background-color: $deep_blue;
+  height: 60px;
+  width: 200px
+}
+
+.check_box{
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+.search_bottom_1{
+  font-size: 17px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  margin: 5px; 
+}
+.search_bottom_2{
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.product__list__link{
+  border-radius:5px 5px 15px 5px;
+  background-color: $deep_blue;
+  color: white;
+  text-decoration: none;
+  float: right;
+  margin: 120px 120px 0 0;
+  padding: 15px 30px 15px 30px;
+
+}

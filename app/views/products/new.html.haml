@@ -1,0 +1,21 @@
+.form_wrapper
+  .form_paper
+    = form_for @product do |f|
+      .top
+        =f.label :name,"投稿する商品を入力ください",class:"selected_product_label"
+      .top_form
+        =f.label :name, "タイトル",class:"top_title"
+        =f.text_field :title, class:"text_field"
+      .price_form
+        =f.label :name, "値段", class:"top_title"
+        =f.text_field :price, data: { autonumeric: { aSign: '¥ ', mDec: 0 } }, class:"text_field"
+      .bottom_form_search
+        =f.label :name,"説明",class:"product_info_label"
+        =f.text_area :information,class:"product_info_area",placeholder:"説明"
+      .bottom_form
+        =f.label :name,"動画のサムネイルを選択",class:"product_image_label"
+        =f.file_field :image, class:"product_image_area",placeholder:"画像"
+      .bottom_form
+        =f.label :name,"投稿する動画を選択",class:"product_label"
+        =f.file_field :movie, class:"product_area",placeholder:"動画"
+      =f.submit "投稿する",class:"product_bottun"
