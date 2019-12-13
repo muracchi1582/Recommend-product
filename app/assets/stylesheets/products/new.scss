@@ -1,0 +1,157 @@
+.form_wrapper{
+  padding-top: 70px;
+  padding-bottom: 70px;
+  width: 100%;
+  background-color: $very_light_blue; 
+}
+
+.form_paper{
+  border-radius: 5px;
+  margin: 50px 400px 50px 400px;
+  padding: 70px 0 70px 30px;
+  background-color:white;
+  box-shadow: 10px 10px 10px rgba(163, 159, 159, 0.6);
+}
+
+.top_form{
+  margin-bottom: 50px;
+}
+
+.top_title{
+  margin-left: 70px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px 5px 15px 5px;
+  background-color: $deep_blue;
+  color: white;
+}
+
+.text_field{
+  width: 300px;
+  border-radius: 5px ;
+}
+
+.product__form{
+  margin-bottom: 50px;
+}
+
+.product_search{
+  margin-left: 100px;
+  margin-bottom: 20px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px 5px 15px 5px;
+  background-color: $deep_blue;
+  color: white;
+}
+
+.product_text_field{
+  width: 300px;
+  border-radius: 5px ;
+}
+
+.products_list{
+  height: 300px;
+  width: 300px;
+}
+
+.selected_product_label{
+  position: relative;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px 5px 15px 5px;
+  background-color: $deep_blue;
+  color: white;
+}
+
+.product_list_form{
+  width: 345px;
+  height: 35px;
+  margin: 20px 0 0 170px;
+  border-bottom: solid $deep_blue;
+}
+
+.product_list_form__name{
+  float: left;
+  margin-top:10px;
+}
+
+.product_list_add{
+  font-size: 13px;
+  border-radius: 5px 5px 15px 5px;
+  color: white;
+  padding: 7px 15px 7px 15px;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 300px;
+  background-color: $deep_blue;
+}
+
+.selected_product_label{
+  margin-left: 65px;
+}
+
+.form__select__product__title{
+  float: left;
+  height: 30px;
+  width: 290px;
+  margin: 0 0 0 200px;
+  border-bottom: solid $deep_blue;
+}
+
+.product-search-remove{
+  font-size: 13px;
+  border-radius: 5px 5px 15px 5px;
+  color: white;
+  padding: 7px 15px 7px 15px;
+  position: absolute;
+  margin-left: 450px;
+  background-color: $deep_blue;
+}
+
+.product_image_label{
+  margin-left: 5px;
+  margin-bottom: 50px;
+  font-size: 13px;
+  border-radius: 5px 5px 15px 5px;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  background-color: $deep_blue;
+}
+
+.bottom_form{
+  margin-bottom: 50px;
+}
+
+.product_label{
+  margin-left: 30px;
+  font-size: 13px;
+  border-radius: 5px 5px 15px 5px;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  background-color: $deep_blue;
+}
+
+.product_bottun{
+  margin: 20px 0 0 240px; 
+  padding: 10px 20px 10px 20px;
+  background-color: $deep_blue;
+  color: white;
+  border-radius: 5px 5px 15px 5px;
+}
+
+.product_info_label{
+  position: absolute;
+  margin-left: 120px;
+  font-size: 13px;
+  border-radius: 5px 5px 15px 5px;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  background-color: $deep_blue;
+}
+
+.product_info_area{
+  margin-left: 200px;
+  height: 150px;
+  width: 330px;
+  margin-bottom: 15px;
+  border-radius: 5px ;
+  border: inset 2px rgb(218, 214, 214);
+}

@@ -1,0 +1,28 @@
+.form_wrapper
+  .form_paper
+    = form_for @product do |f|
+      .top_form
+        =f.label :name, "タイトル",class:"top_title"
+        =f.text_field :title, class:"text_field"
+      .product__form
+        =f.label :name, "検索",class:"product_search"
+        %input{ placeholder: "紹介したい商品を入力してください", type:"text",name: "keyword",class:"product_text_field"}
+        #product-search-result.products_list
+          -@products.each do |product|
+            .product_list_form
+              %p.product_list_form__name 
+                ="#{product.title}"
+              .product_list_add{"data-product-id" => "#{product.id}", "data-product-title" => "#{product.title}"} 追加
+        =f.label :name,"投稿する商品",class:"selected_product_label"
+        .selected-product
+        
+      .bottom_form_search
+        =f.label :name,"説明",class:"product_info_label"
+        =f.text_area :information,class:"product_info_area",placeholder:"説明"
+      .bottom_form
+        =f.label :name,"動画のサムネイルを選択",class:"product_image_label"
+        =f.file_field :image, class:"product_image_area",placeholder:"画像"
+      .bottom_form
+        =f.label :name,"投稿する動画を選択",class:"product_label"
+        =f.file_field :movie, class:"product_area",placeholder:"動画"
+      =f.submit "投稿する",class:"product_bottun"

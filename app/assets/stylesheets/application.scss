@@ -1,2 +1,6 @@
-@import "products.scss";
-@import "config/reset.scss"
+@import "config/colors";
+  @import "products.scss";
+  @import "config/reset.scss";
+  @import "products/index.scss";
+  @import "products/new.scss";
+  
