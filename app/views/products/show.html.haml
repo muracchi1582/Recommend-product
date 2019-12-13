@@ -1,0 +1,19 @@
+.show__wrapper
+  = product_tag @product.movie_url.to_s, loop: true, controls: true ,class: "show__product"
+  .show__product__title
+    %p.product__title タイトル
+    = @product.title
+  .product__book__price
+    %p.product__book 価格
+    =@product.price
+    円
+    .show_shop_link
+      =link_to "購入画面へ進む","/products/#{@product.id}",class:"shop__link"
+
+  -@products.each do |product|
+    .show__contents
+      .show__contents__image
+        = link_to image_tag product.image.url,href:"/products/#{product.id}",class: "show__image" if product.image.present?
+      .show__contents__title
+        = link_to "#{product.title}".truncate(27,omission:"..."),"/products/#{product.id}",class: "show__text"
+        = link_to "#{product.user.name}","/products/#{product.id}",class: "index__user"

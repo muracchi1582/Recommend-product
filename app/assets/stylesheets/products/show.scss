@@ -1,0 +1,160 @@
+.show__product{
+  margin-left: 30px;
+  float: left;
+  height: 500px;
+  width: 1000px;
+  padding: 15px 0 0 15px;
+}
+
+.show__contents{
+  padding: 30px 0 0 1100px; 
+}
+
+.show__product__title{
+  margin: 10px 0 0 10px;
+  padding: 20px 0 0 40px;
+  float: left;
+  font-size: 20px;
+}
+
+.show__product__id{
+  margin: 0px 0 0 800px;
+  font-size: 20px;
+  color:rgb(139, 139, 139);
+  opacity:0.8;
+}
+
+.show__product__user{
+  padding: 20px 0 0 20px;
+  margin-bottom: 50px;
+}
+
+.show__contents__title{
+  height: 50px;
+  width: 200px;
+}
+
+.show__image{
+  height: 130px;
+  width: 200px;
+}
+
+.show__text{
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.show_shop_link{
+  margin-left: 800px;
+}
+
+.shop__link{
+  border-radius:5px 5px 15px 5px;
+  font-size: 15px;
+  padding: 15px;
+  text-decoration: none;
+  background-color: $deep_blue;
+  color: white;
+}
+
+.product__title{
+  color: white;
+  font-size: 12px;
+  border-radius:5px 5px 15px 5px;
+  padding: 10px;
+  background-color: $deep_blue;
+  float: left;
+  margin-right: 10px;
+}
+
+.video__product{
+  margin-right: 10px;
+  padding: 10px;
+  color: white;
+  font-size: 12px;
+  border-radius:5px 5px 15px 5px;
+  background-color: $deep_blue;
+  float: left;
+}
+
+.product__user{
+  margin-right: 10px;
+  padding: 10px;
+  color: white;
+  font-size: 12px;
+  border-radius:5px 5px 15px 5px;
+  color:white;
+  background-color: $deep_blue;
+  float: left;
+}
+
+.video__book__price{
+  margin: 40px 0 0 37px;
+}
+
+.section {
+  margin: 0px;
+  bottom: 0px;
+  width: 4000px;
+  float: left;
+  height: 100%;
+  text-shadow: 1px 1px 2px #f0f0f0;
+}
+
+.section h2 {
+  margin: 50px 0px 30px 50px;
+}
+
+.section p {
+  margin: 20px 0px 0px 50px;
+  width: 600px;
+}
+
+.black {
+  color: #fff;
+  background: #000 url(https://i.imgur.com/pZWuILO.jpg) no-repeat top right;
+}
+
+.white {
+  color: #000;
+  background: #fff url(https://i.imgur.com/LVp6aFC.jpg) no-repeat top right;
+}
+
+.section ul {
+  list-style: none;
+  margin: 20px 0px 0px 550px;
+}
+
+.black ul li {
+  float: left;
+  padding: 5px;
+  margin: 5px;
+  color: #aaa;
+}
+
+.black ul li a {
+  display: block;
+  color: #f0f0f0;
+}
+
+.black ul li a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.white ul li {
+  float: left;
+  padding: 5px;
+  margin: 5px;
+  color: #aaa;
+}
+
+.white ul li a {
+  display: block;
+  color: #222;
+}
+
+.white ul li a:hover {
+  text-decoration: none;
+  color: #000;
+}
