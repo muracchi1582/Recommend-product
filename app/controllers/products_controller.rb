@@ -10,11 +10,22 @@ class ProductsController < ApplicationController
   end
 
   def create
-    @product = product.new(product_params)
-    @product.save
+    Product.create(product_params)
     redirect_to root_path
   end
 
+  def show
+    @products = Product.order(created_at: :DESC).limit(4)
+    @product = Product.find(params[:id])
+  end
+
+  def destroy
+    Product.delete(params[:id])
+    redirect_to root_path
+  end
+
+  def purchase
+  end
 
 
   private

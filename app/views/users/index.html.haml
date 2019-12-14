@@ -1,0 +1,15 @@
+-@products.each do |product|
+  .search_content
+    .search_content__image
+      = image_tag product.image.url,class: "search__index__image" if product.image.present?
+    .search_content__title
+      .title__text
+        =product.title.truncate(40,omission:"...")
+    .search_content__user
+      .user__text
+        =product.user.name
+    .search_content__info
+      .info__text
+        =product.information 
+    .video__delete
+      = link_to "削除","/products/#{product.id}",method: :delete, class: "delete__bottun"

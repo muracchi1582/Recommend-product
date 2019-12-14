@@ -5,4 +5,4 @@
         = link_to  image_tag product.image.url,class: "index__image" if product.image.present?
       .content__title
         = link_to "#{product.title}".truncate(27,omission:"..."),"/products/#{product.id}",class: "index__text"
-        = link_to "#{product.user.name}","/products/#{product.id}",class: "index__user"
+        

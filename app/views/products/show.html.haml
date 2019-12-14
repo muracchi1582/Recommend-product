@@ -1,0 +1,28 @@
+.show-container
+  %section.show-content
+    %h1.show-content__name
+      = @product.title
+    .show-content__clearfix
+      .show-content__video
+        .show-content__stand
+          .show-content__movie
+            = video_tag @product.movie_url.to_s, loop: true, controls: true ,class: "show__product"
+      %table.show-content__table
+        %tbody
+          %tr
+            %th 投稿者
+            %td
+              = @product.user.name
+          %tr
+            %th 視聴回数
+            %td
+              3000 回
+          %tr
+            %th 価格
+            %td
+              = @product.price
+              円
+      .show-content__link
+        =link_to "購入画面へ進む","/products/#{@product.id}/purchase",class:"shop__link"        
+                 
+  
