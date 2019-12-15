@@ -27,7 +27,5 @@ Rails.application.routes.draw do
       get 'user_registration2'
     end
   end
-
-  get 'products/:id/purchase' => 'products#purchase'
   
 end

@@ -6,4 +6,7 @@ class UsersController < ApplicationController
     @products = @user.products
   end
 
+  def show
+  end
+
 end

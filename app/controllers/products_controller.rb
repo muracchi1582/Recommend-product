@@ -24,9 +24,6 @@ class ProductsController < ApplicationController
     redirect_to root_path
   end
 
-  def purchase
-  end
-
 
   private
   def product_params
