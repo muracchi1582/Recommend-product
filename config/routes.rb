@@ -3,8 +3,15 @@ Rails.application.routes.draw do
   root 'products#index'
   resources :products, only:[:index,:new, :create, :show, :destroy]
   resources :users, only: [:index] do
-    resources :card, only: [:new]
+    resources :cards, only: [:new] do
+      collection do
+        get 'show'
+        post 'pay'
+        post 'delete'
+      end
+    end
   end
+
   get 'products/:id/purchase' => 'products#purchase'
   
 end
