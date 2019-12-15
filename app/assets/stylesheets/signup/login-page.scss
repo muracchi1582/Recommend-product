@@ -1,0 +1,51 @@
+.user-login-page-block {
+  padding-bottom: 10px;
+  .user-login-or-create {
+    max-width: none;
+    width: 456px;
+    margin: 0 auto;
+    background-color: #fff;
+
+    .user-login-form {
+      margin: 0;
+      padding: 0;
+      &__block {
+        padding: 24px 64px 32px;
+        .field {
+          font-size: 320x;
+          background: #fff;
+          line-height: 1.5;
+          #user_email {
+            margin-top: 50px;
+            height: 48px;
+            width: 100%;
+            padding: 10px 16px 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          }
+          #user_password {
+            height: 48px;
+            width: 100%;
+            margin: 50px 0 0;
+            padding: 10px 16px 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+    .actions {
+      margin: 80px 0 0;
+      .login-btn {
+        width: 100%;
+        background-color: $deep_blue;
+        color: #fff;
+        display: block;
+        line-height: 48px;
+        font-size: 14px;
+        cursor: pointer;
+        text-align: center;
+      }
+    }
+  }
+}

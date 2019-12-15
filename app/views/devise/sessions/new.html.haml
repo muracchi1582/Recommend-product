@@ -1,0 +1,11 @@
+.user-login-page-block
+  .user-login-or-create
+
+    .user-login-form__block
+      = form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "user-login-form"}) do |f|
+        .field
+          = f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "メールアドレス"
+        .field
+          = f.password_field :password, autocomplete: "current-password", placeholder: "パスワード"
+        .actions
+          = f.submit "ログイン", class: 'login-btn'
