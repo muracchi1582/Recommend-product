@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Choose-product
+    %title Recommend-product
     %script{src: "https://js.pay.jp/", type: "text/javascript"}
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
@@ -20,7 +20,7 @@
             -#   =submit_tag 'Search', name: :nil,class:"search__bottun"
           .header__right       
             =link_to "新規投稿","/products/new",class: "list"
-            =link_to "ログアウト","/users/sign_out", class:"list",method: :delete
+            =link_to "ログアウト",destroy_user_session_path, class:"list",method: :delete
             =link_to "動画削除", "/users",class:"list"
             =link_to "購入履歴", "/users/#{current_user.id}/history",class:"list"
         
@@ -37,5 +37,5 @@
               %li
                 =link_to "ログイン", new_user_session_path,class:"list"
               %li 
-                =link_to "新規登録", new_user_registration_path,class:"list"
+                =link_to "新規登録", signup_index_path,class:"list"
       = yield

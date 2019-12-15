@@ -1,0 +1,20 @@
+.signup-view-1page
+  %section.signup-view-block
+    %h2.signup-view-block__explanation 
+      会員情報入力
+    = form_for @user, url: user_registration2_signup_index_path, method: :get, html: {class: 'signup-view-block__form'} do |f|
+      .signup-view-block__form--top
+        .signup-form1
+          %label.signup-form1__label
+            ニックネーム
+          = f.text_field :name, placeholder: '例) masatoshi', class: 'signup-form1__form'
+        .signup-form1
+          %label.signup-form1__label
+            メールアドレス
+          = f.email_field :email, placeholder: 'PC・携帯どちらでも可', class: 'signup-form1__form'
+        .signup-form1
+          %label.signup-form1__label
+            パスワード
+          = f.password_field :password, class: 'signup-form1__form'
+        .signup-next-submit
+          = f.submit '次へ進む'
