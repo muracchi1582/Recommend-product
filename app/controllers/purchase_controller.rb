@@ -24,6 +24,11 @@ class PurchaseController < ApplicationController
       customer: card.customer_id,
       currency: :'jpy',
     )
+    if @product.save
+      redirect_to action: 'done'
+    else
+     redirect_to root_path
+    end 
   end
 
   def done

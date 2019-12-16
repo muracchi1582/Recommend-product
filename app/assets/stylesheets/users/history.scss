@@ -1,0 +1,56 @@
+.history__wrapper{
+  padding-top: 70px;
+  padding-bottom: 70px;
+  width: 100%;
+  background-color: $very_light_blue;
+}
+.history{
+  overflow: auto;
+  border-radius: 5px;
+  background-color:white;
+  box-shadow: 10px 10px 10px rgba(163, 159, 159, 0.6);
+  padding-top:5px;
+  height: 1000px;
+  width: 700px;
+  margin-left: 400px;
+  margin-top: 20px;
+}
+.history__title{
+  display: inline-block;
+  margin: 10px 0 0 10px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px 5px 15px 5px;
+  background-color: $deep_blue;
+  color: white;
+}
+.histories{
+  margin-left: 80px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+.created_at{
+  margin-right: 80px;
+  float: right;
+}
+
+.price{
+  float: right;
+  margin-right: 40px;
+}
+
+.total__title{
+  margin: 10px 0 0 10px;
+  font-size: 13px;
+  width: 70px;
+  padding: 8px 0px 8px 16px;
+  border-radius: 5px 5px 15px 5px;
+  background-color: $deep_blue;
+  color: white;
+  float: right;
+  margin-bottom: 60px;
+}
+
+.total__price{
+  margin: 25px 75px 0 20px;
+  float: right;
+}

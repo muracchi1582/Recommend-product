@@ -36,5 +36,7 @@ Rails.application.routes.draw do
       get 'done'
     end
   end
+
+  get "users/:id/history" => "users#history"
   
 end
