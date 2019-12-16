@@ -16,7 +16,5 @@
             = form_tag(delete_user_cards_path, method: :post, id: 'charge-form',  name: "inputForm") do
               %input{ type: "hidden", name: "card_id", value: "" }
               %button.credit-send-button 削除する
-    .credit-line
-      =link_to "javascript:void(0)", class: "credit-method" do
-        支払い方法について
-        =fa_icon 'angle-right', class: 'credit-angle-right'
+    .show-content__link
+      =link_to "購入画面へ進む","/products/#{product.id}/purchase",class:"shop__link"
