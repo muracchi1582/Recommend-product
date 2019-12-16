@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'purchase/index'
-  get 'purchase/done'
   devise_for :users, skip: :sessions
 
   devise_scope :user do #ログイン関係のパス名をloginとlogoutに変更
@@ -16,11 +14,9 @@ Rails.application.routes.draw do
       collection do
         post 'pay'
         get 'done'
-      end
-    end  
+      end  
+    end
   end
-
-
 
   resources :users, only: [:index] do
     resources :cards, only: [:new] do
@@ -37,6 +33,7 @@ Rails.application.routes.draw do
       get 'new'
       get 'user_registration1'
       get 'user_registration2'
+      get 'done'
     end
   end
   

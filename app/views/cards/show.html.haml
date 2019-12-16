@@ -17,4 +17,4 @@
               %input{ type: "hidden", name: "card_id", value: "" }
               %button.credit-send-button 削除する
     .show-content__link
-      =link_to "購入画面へ進む","/products/#{product.id}/purchase",class:"shop__link"
+      =link_to "購入画面へ進む", purchase_index_path,class:"shop__link"
