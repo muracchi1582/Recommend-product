@@ -1,0 +1,53 @@
+// Place all the styles related to the signup controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.icon {
+  font-size: 25px;
+  position: absolute;
+  float: left;
+  top: 12px;
+  left: 12px;
+}
+
+.user-signin {
+  padding-bottom: 135px;
+  .user-category {
+    width: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    &__top {
+      border-bottom-style: solid;
+      border-width: 1px;
+      border-color: whitesmoke;
+      font-size: 22px;
+      padding: 32px;
+      text-align: center;
+      font-weight: bold;
+    }
+    &__fut {
+      padding: 24px 16px 40px;
+      .login-category {
+        max-width: 343px;
+        margin: 0 auto;
+        &__email {
+          width: 100%;
+          display: block;
+          text-align: center;
+          background-color: $deep_blue;
+          color: #fff;
+          line-height: 48px;
+          text-decoration: none;
+          border-radius: 4px;
+          font-size: 14px;
+          position: relative;
+          transition:all meease-out 0.3s;
+          cursor: pointer;
+        }
+        &__email:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

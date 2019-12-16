@@ -70,3 +70,7 @@ gem 'mini_magick'
 gem 'jquery-rails'
 gem 'payjp'
 gem 'autonumeric-rails'
+gem 'dotenv-rails'
+gem 'gon'
+gem 'fog-aws'
+gem "font-awesome-rails"

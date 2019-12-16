@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-
+  # before_action :authenticate_user!, only: [:new, :destroy]
   def index
     @products = Product.all
   end
@@ -22,9 +22,6 @@ class ProductsController < ApplicationController
   def destroy
     Product.delete(params[:id])
     redirect_to root_path
-  end
-
-  def purchase
   end
 
 
