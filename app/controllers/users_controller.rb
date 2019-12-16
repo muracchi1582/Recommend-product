@@ -8,7 +8,7 @@ class UsersController < ApplicationController
 
   def show
   end
-
+  a
   def history
     @histories = History.all
   end
