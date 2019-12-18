@@ -15,6 +15,21 @@
 - 容量が重くなりすぎないため動画の画質は落としています
 
 ## DEMO
+ER図（DB設計）
+https://gyazo.com/5e94d5760bcd168466d6b7c08cbd3dfa
+
+トップページ
+https://gyazo.com/2aeb1ee528db4b7de6249ff9eca56a72
+
+会員情報入力
+https://gyazo.com/b4ceb0e09c664a48c96f01ef12be1693
+
+新規投稿
+https://gyazo.com/7b4317daae55103eb737529699dfbe79
+
+購入の流れ
+https://gyazo.com/5eaa3836fd6d0452507bd9c41f57f9b4
+
 
 ## Features
 
@@ -84,3 +99,13 @@
 ### Association
 - belongs_to :user
 - belongs_to :product
+
+
+## cardsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|
+|customer_id|integer|
+
+### Association
+- belongs_to :user
