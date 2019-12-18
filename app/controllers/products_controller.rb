@@ -25,7 +25,10 @@ class ProductsController < ApplicationController
     redirect_to root_path
   end
 
-
+  def search
+    @products = Product.where("title Like ?","%#{params[:keyword]}%")
+ end
+ 
   private
   def product_params
     params.require(:product).permit(:title, :movie, :image, :price, :information)

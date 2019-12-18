@@ -32,5 +32,5 @@ Rails.application.routes.draw do
   end
 
   get "users/:id/history" => "users#history"
-  
+  get "products/:id/search" => "products#search", as: :search_products
 end
