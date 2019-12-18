@@ -15,9 +15,9 @@
           .header__left
             =link_to "Recommend-product",root_path,class: "index__title"
           .search__top
-            -# = form_tag(products_search_path,method: :get) do
-            -#   =text_field_tag :keyword, nil,class:"search__field",placeholder:"タイトルで探す"
-            -#   =submit_tag 'Search', name: :nil,class:"search__bottun"
+            -# = form_tag(search_products_path,method: :get) do
+            -#   = text_field_tag :keyword, nil,class:"search__field",placeholder:"タイトルで探す"
+            -#   = submit_tag 'Search', name: :nil,class:"search__bottun"
           .header__right       
             =link_to "新規投稿","/products/new",class: "list"
             =link_to "ログアウト",destroy_user_session_path, class:"list",method: :delete
@@ -29,9 +29,9 @@
           .header__left
             =link_to "Recommend-product",root_path,class: "index__title"
           .search__top
-            -# = form_tag(products_search_path,method: :get) do
-            -#   =text_field_tag :keyword, nil,class:"search__field",placeholder:"タイトルで探す"
-            -#   =submit_tag 'Search', name: :nil,class:"search__bottun"
+            -# = form_tag(search_products_path,method: :get) do
+            -#   = text_field_tag :keyword, nil,class:"search__field",placeholder:"タイトルで探す"
+            -#   = submit_tag 'Search', name: :nil,class:"search__bottun"
           .header__right
             %ul
               %li

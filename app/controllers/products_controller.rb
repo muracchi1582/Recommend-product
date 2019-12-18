@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
-  # before_action :authenticate_user!, only: [:new, :destroy]
+  before_action :authenticate_user!, only: [:new, :destroy]
+  
   def index
     @products = Product.all
   end
@@ -24,7 +25,10 @@ class ProductsController < ApplicationController
     redirect_to root_path
   end
 
-
+  def search
+    @products = Product.where("title Like ?","%#{params[:keyword]}%")
+ end
+ 
   private
   def product_params
     params.require(:product).permit(:title, :movie, :image, :price, :information)

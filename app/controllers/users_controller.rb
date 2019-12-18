@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-
+  before_action :authenticate_user!
   
   def index
     @user = User.find(current_user.id)
@@ -10,7 +10,9 @@ class UsersController < ApplicationController
   end
   
   def history
-    @histories = History.all
+    @user = User.find(current_user.id)
+    @products = @user.products
+    @histories = @products
   end
 
 end

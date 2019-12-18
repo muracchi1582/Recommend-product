@@ -1,11 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users, skip: :sessions
-
-  devise_scope :user do #ログイン関係のパス名をloginとlogoutに変更
-    get "login", to: "users/sessions#new", as: :new_user_session
-    post "login", to: "users/sessions#create", as: :user_session
-    delete "logout", to: "users/sessions#destroy", as: :destroy_user_session
-  end
+  devise_for :users
 
   root 'products#index'
 
@@ -38,5 +32,5 @@ Rails.application.routes.draw do
   end
 
   get "users/:id/history" => "users#history"
-  
+  get "products/:id/search" => "products#search", as: :search_products
 end
