@@ -5,7 +5,7 @@
     -@histories.each_with_index do |history, id|
       .histories
         = id+1
-        = history.product.title.truncate(14,omission:"...")
+        = history.title.truncate(14,omission:"...")
         .created_at
           = history.created_at.strftime("%Y/%m/%d %H:%M")
         .price
