@@ -33,4 +33,10 @@ class PurchaseController < ApplicationController
 
   def done
   end
+
+  def history
+    @user = User.find(current_user.id)
+    @products = @user.products
+    @histories = @products
+  end
 end
