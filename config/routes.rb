@@ -7,7 +7,6 @@ Rails.application.routes.draw do
     resources :purchase, only: [:index] do
       collection do
         post 'pay'
-        get 'done'
       end  
     end
   end
@@ -31,6 +30,6 @@ Rails.application.routes.draw do
     end
   end
 
-  get "users/:id/history" => "users#history"
+  get "products/purchase/history" => "purchase#history", as: :history_purchase
   get "products/:id/search" => "products#search", as: :search_products
 end
