@@ -24,19 +24,20 @@ class PurchaseController < ApplicationController
       customer: card.customer_id,
       currency: :'jpy',
     )
-    if @product.save
-      redirect_to action: 'done'
-    else
-     redirect_to root_path
-    end 
-  end
-
-  def done
+    History.create(
+      user_id: current_user.id,
+      product_id: params[:product_id],
+    )
+    # if @product.save
+    #   redirect_to action: 'done'
+    # else
+    #  redirect_to root_path
+    # end 
   end
 
   def history
-    @user = User.find(current_user.id)
-    @products = @user.products
-    @histories = @products
+
+    @histories = current_user.products
   end
+
 end
