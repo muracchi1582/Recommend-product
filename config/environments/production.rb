@@ -92,3 +92,7 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
+
+before_exec do |server|
+  ENV["BUNDLE_GEMFILE"] = File.join(File.expand_path("../../../../", __FILE__), "current", "Gemfile")
+end
