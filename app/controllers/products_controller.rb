@@ -26,7 +26,7 @@ class ProductsController < ApplicationController
   end
 
   def search
-    @products = Product.search(params[:keyword])
+    @products = Product.where( "title LIKE ? ","%#{params[:keyword]}%")
     respond_to do |format|
       format.html
       format.json

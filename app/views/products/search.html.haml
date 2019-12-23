@@ -1,0 +1,8 @@
+-@products.each do |product|
+  .search_content
+    .search_content__image
+      = link_to  image_tag product.image.url,class: "search__index__image" if product.image.present?
+    .search_content__title
+      = link_to "#{product.title}".truncate(40,omission:"..."),"/products/#{product.id}",class: "title__text"
+    .search_content__info
+      = link_to "#{product.information}","/products/#{product.id}",class: "info__text"
