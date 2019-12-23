@@ -7,7 +7,6 @@ Rails.application.routes.draw do
     resources :purchase, only: [:index] do
       collection do
         post 'pay'
-        get 'search'
       end  
     end
   end
