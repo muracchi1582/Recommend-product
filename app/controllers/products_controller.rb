@@ -3,6 +3,12 @@ class ProductsController < ApplicationController
   
   def index
     @products = Product.all
+    return nil if params[:keyword] == ""
+    @product = Product.where(['title LIKE ?', "%#{params[:keyword]}%"] ).where.not(id: current_user.id).limit(10)
+    respond_to do |format|
+      format.html
+      format.json
+    end
   end
 
   def new
@@ -26,8 +32,12 @@ class ProductsController < ApplicationController
   end
 
   def search
-    @products = Product.where("title Like ?","%#{params[:keyword]}%")
- end
+    @products = Product.where( "title LIKE ? ","%#{params[:keyword]}%")
+    respond_to do |format|
+      format.html
+      format.json
+    end
+  end
  
   private
   def product_params
