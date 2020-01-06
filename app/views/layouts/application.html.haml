@@ -18,6 +18,7 @@
             = form_tag("/products/:id/search", method: :get) do 
               = text_field_tag :keyword, nil, class:"search__field",placeholder:"タイトルで探す"
               = submit_tag 'Search', name: :nil, class:"search__bottun"
+
           .header__right       
             =link_to "新規投稿","/products/new",class: "list"
             =link_to "ログアウト",destroy_user_session_path, class:"list",method: :delete
