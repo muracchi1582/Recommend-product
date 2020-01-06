@@ -38,8 +38,6 @@ https://gyazo.com/5eaa3836fd6d0452507bd9c41f57f9b4
 - AWS S3への画像・動画アップロード
 - pay.jpによる購入処理
 - devise gemを使用した新規登録、ログイン機能
-- (予定)Jqueryによるインクリメンタルサーチ機能
-- (予定)利益表作成機能
 
 ## Requirement
 
